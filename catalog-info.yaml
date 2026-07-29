@@ -30,5 +30,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: devteam1
+  owner: group:default/devteam1
   system: parasol-insurance
+  providesApis:
+    - parasol-insurance-api
