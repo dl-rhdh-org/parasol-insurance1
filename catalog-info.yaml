@@ -1,0 +1,34 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: parasol-insurance1
+  description: Parasol Insurance demo app (GitHub + Actions showcase)
+  annotations:
+    github.com/project-slug: dl-rhdh-org/parasol-insurance1
+    backstage.io/source-location: url:https://github.com/dl-rhdh-org/parasol-insurance1
+    # Image Registry tab (points at public quay.io for demo)
+    quay.io/repository-slug: openshifttest/hello-openshift
+    # Kubernetes / Topology
+    backstage.io/kubernetes-id: parasol-demo
+    backstage.io/kubernetes-namespace: parasol-demo
+    # Argo CD tab
+    argocd/app-name: parasol-demo-nginx
+    argocd/app-namespace: openshift-gitops
+    argocd/instance-name: main
+    servicenow.com/entity-id: parasol-insurance1
+  tags:
+    - parasol
+    - github-actions
+    - demo
+  links:
+    - url: https://github.com/dl-rhdh-org/parasol-insurance1
+      title: GitHub Repository
+      icon: github
+    - url: https://github.com/dl-rhdh-org/parasol-insurance1/actions
+      title: GitHub Actions
+      icon: github
+spec:
+  type: service
+  lifecycle: experimental
+  owner: devteam1
+  system: parasol-insurance

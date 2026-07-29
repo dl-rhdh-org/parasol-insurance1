@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Parasol demo CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show project
+        run: |
+          echo "Parasol Insurance GitHub Actions showcase"
+          echo "Repository: "
+          ls -la
+
+      - name: Validate catalog-info.yaml
+        run: |
+          test -f catalog-info.yaml
+          grep -q 'kind: Component' catalog-info.yaml
+          grep -q 'github.com/project-slug' catalog-info.yaml
+          echo "catalog-info.yaml OK"
+
+      - name: Demo success
+        run: echo "Phase C CI complete — visible in RHDH GitHub Actions CI tab"
