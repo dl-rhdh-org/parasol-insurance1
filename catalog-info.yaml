@@ -5,7 +5,8 @@ metadata:
   description: Parasol Insurance demo app (GitHub + Actions showcase)
   annotations:
     github.com/project-slug: dl-rhdh-org/parasol-insurance1
-    backstage.io/source-location: url:https://github.com/dl-rhdh-org/parasol-insurance1
+    backstage.io/source-location: url:https://github.com/dl-rhdh-org/parasol-insurance1/tree/main
+    backstage.io/techdocs-ref: url:https://github.com/dl-rhdh-org/parasol-insurance1/tree/main
     # Image Registry tab (points at public quay.io for demo)
     quay.io/repository-slug: openshifttest/hello-openshift
     # Kubernetes / Topology

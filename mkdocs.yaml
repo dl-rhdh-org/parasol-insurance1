@@ -1,0 +1,8 @@
+site_name: parasol-insurance1
+site_description: Parasol Insurance demo component docs
+docs_dir: docs
+plugins:
+  - techdocs-core
+nav:
+  - Overview: index.md
+  - Claims API: api.md
