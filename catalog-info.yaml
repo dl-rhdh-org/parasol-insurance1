@@ -17,6 +17,7 @@ metadata:
     argocd/app-namespace: openshift-gitops
     argocd/instance-name: main
     servicenow.com/entity-id: parasol-insurance1
+    sonarqube.org/project-key: parasol-insurance1
   tags:
     - parasol
     - github-actions
